@@ -6,6 +6,7 @@ relations = dict()
 
 
 def openFreebaseDump(file):
+    global fb
     try:
         fb = open(file, "r")
 
@@ -30,7 +31,41 @@ def loadRelations(file):
         sys.exit(1)
 
 
+def outputRelations(directory):
+    fileOuts = dict()
+    global relations, fb
+
+    special = {"/common/topic/alias",
+               "/organization/organization/date_founded",
+               "/people/deceased_person/date_of_death",
+               "/business/defunct_company/ceased_operations",
+               "/people/person/date_of_birth",
+               "/people/person/age",
+               "/common/topic/official_website"
+               }
+
+    for key in relations.keys():
+        output = open(directory + "/" + key.replace("/", "_") + ".txt", "w+")
+        fileOuts[key] = output
+
+    with open("/home/bdwalker/FreeBase/freebase.tsv") as fb:
+        for line in fb:
+            line = line.rstrip("\n")
+            splitLine = line.split("\t")
+            key = splitLine[1]
+            if key in special and relations[key] == []:
+                print key
+                fileOuts[key].write(splitLine[0] + "\t" + splitLine[3] + "\t" + key + "\n")
+            elif key in relations.keys() and relations[key] == []:
+                print key
+                fileOuts[key].write(splitLine[0] + "\t" + splitLine[2] + "\t" + key + "\n")
+
+    for key, value in fileOuts:
+        value.close()
+
+
 if __name__ == "__main__":
     input_file = sys.argv[1]
     openFreebaseDump(input_file)
     loadRelations("./mappings.txt")
+    outputRelations("/home/bdwalker/FreeBase/output")

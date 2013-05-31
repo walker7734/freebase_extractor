@@ -7,7 +7,7 @@
 /organization/organization_founder/organizations_founded
 /organization/organization_member/member_of	/organization/organization_membership/member
 /organization/organization_member/member_of	/organization/organization_membership/organization
-/business/employer/number_of_employees
+/business/employer/number_of_employees	/measurement_unit/dated_integer/number
 /organization/organization/parent	/organization/organization_relationship/parent
 /organization/organization/child	/organization/organization_relationship/child
 /organization/organization/leadership	/organization/leadership/person
