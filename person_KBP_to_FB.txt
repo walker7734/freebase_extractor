@@ -1,0 +1,40 @@
+KBP relation	FB relation	inverse FB relation	In Mitchell's FB relations	
+per:age	/people/person/age			
+per:alternate_names	/common/topic/alias			
+per:cause_of_death	/people/deceased_person/cause_of_death		1	
+per:cause_of_death	/people/cause_of_death/people		1	
+per:cause_of_death	/people/cause_of_death/includes_causes_of_death		1	
+per:charges	/celebrities/legal_entanglement/offense			
+per:children	/people/person/children	/people/person/parents	1	
+per:children	/people/family/members		1	
+per:children	/people/family_member/family		1	
+per:cities_of_residence	/people/place_lived			
+per:city_of_birth	/people/person/place_of_birth		1	
+per:city_of_death	/people/deceased_person/place_of_death		1	
+per:countries_of_residence	/people/place_lived			
+per:country_of_birth 	/people/person/place_of_birth		1	
+per:country_of_death 	/people/deceased_person/place_of_death		1	
+per:date_of_birth	/people/person/date_of_birth			
+per:date_of_death	/people/deceased_person/date_of_death			
+per:employee_or_member_of	/people/person/employment_history	 /business/employer/employees 		
+per:origin				
+per:other_family	/people/family/members		1	
+per:other_family	/people/family_member/family		1	
+per:parents	/people/person/parents	/people/person/children	1	
+per:parents	/people/family/members		1	
+per:parents	/people/family_member/family		1	
+per:religion	/people/person/religion			
+per:schools_attended	/people/person/education	/education/education/student		
+per:siblings	/people/sibling_relationship/sibling			
+per:siblings	/people/family/members		1	
+per:siblings	/people/family_member/family		1	
+per:spouse	/people/marriage/spouse			
+per:stateorprovince_of_birth	/people/person/place_of_birth		1	
+per:stateorprovince_of_death	/people/deceased_person/place_of_death		1	
+per:statesorprovinces_of_residence	/people/place_lived			
+per:title	/business/employment_tenure/title			
+				
+				
+				
+				
+				

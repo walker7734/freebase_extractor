@@ -1,0 +1,39 @@
+/common/topic/alias
+/organization/organization/headquarters	/location/mailing_address/postal_code	/location/postal_code/country
+/organization/organization/headquarters	/location/mailing_address/citytown
+/business/defunct_company/ceased_operations
+/organization/organization/date_founded
+/organization/organization/founders
+/organization/organization_founder/organizations_founded
+/organization/organization_member/member_of	/organization/organization_membership/member
+/organization/organization_member/member_of	/organization/organization_membership/organization
+/business/employer/number_of_employees
+/organization/organization/parent	/organization/organization_relationship/parent
+/organization/organization/child	/organization/organization_relationship/child
+/organization/organization/leadership	/organization/leadership/person
+/common/topic/official_website
+/organization/organization/headquarters	/location/mailing_address/state_province_region
+/people/person/age
+/people/deceased_person/cause_of_death
+/people/cause_of_death/people
+/celebrities/legal_entanglement/offense
+/people/person/parents
+/people/person/children
+/people/person/places_lived	/people/place_lived/location
+/people/person/place_of_birth
+/people/deceased_person/place_of_death
+/people/person/date_of_birth
+/people/deceased_person/date_of_death
+/people/person/employment_history	/business/employment_tenure/company
+/people/person/employment_history	/business/employment_tenure/title
+/business/employer/employees	/business/employment_tenure/person
+/people/family/members
+/people/family_member/family
+/people/person/parents
+/people/person/children
+/people/person/religion
+/people/person/education	/education/education/institution
+/education/education/student
+/people/sibling_relationship/sibling
+/people/marriage/spouse
+/people/person/place_of_birth

@@ -1,0 +1,21 @@
+KBP relation	FB relation	inverse FB  relation	In Mitchell's FB relations
+org:alternate_names	/common/topic/alias		
+org:city_of_headquarters	/organization/organization/headquarters		
+org:country_of_headquarters	/organization/organization/headquarters		
+org:date_dissolved	/business/defunct_company/ceased_operations		
+org:date_founded	/organization/organization/date_founded		
+org:founded_by	/organization/organization/founders	/organization/organization_founder/organizations_founded	1
+org:member_of	/organization/organization_member/member_of		
+org:members	/organization/organization_membership	/organization/organization_member/member_of	
+org:number_of_employees_members	/business/employer/number_of_employees		
+org:parents	/organization/organization_relationship/parent		
+org:parents	/organization/organization/parent		
+org:political_religious_affiliation			
+org:shareholders			
+org:stateorprovince_of_headquarters	/organization/organization/headquarters		
+org:subsidiaries	/organization/organization_relationship/child		
+org:subsidiaries	/organization/organization/child		
+org:top_members_employees	 /organization/organization/leadership		
+org:top_members_employees	/organization/leadership/person		
+org:website	/common/topic/official_website
+
